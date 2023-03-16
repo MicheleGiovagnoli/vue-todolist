@@ -4,15 +4,15 @@ createApp({
 
     data() {
       return {
-        newTask: '',
+        
         taskList: []
       }
     },
 
     methods: {
-        addTask (){
+        addTask (text){
           const newtask = {
-            text: this.newTask,
+            text: text,
             done: true
           };
           this.taskList.push(newtask);
