@@ -16,7 +16,7 @@ createApp({
             done: true
           };
           this.taskList.push(newtask);
-          this.newTask = '';
+          this.text = '';
         },
         removeTask(index) {
             this.taskList.splice(index,1);
