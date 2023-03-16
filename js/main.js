@@ -4,7 +4,7 @@ createApp({
 
     data() {
       return {
-        
+        newTask: '',
         taskList: []
       }
     },
@@ -12,11 +12,11 @@ createApp({
     methods: {
         addTask (text){
           const newtask = {
-            text: text,
+            text: this.newTask,
             done: true
           };
           this.taskList.push(newtask);
-          this.text = '';
+          this.newTask = '';
         },
         removeTask(index) {
             this.taskList.splice(index,1);
